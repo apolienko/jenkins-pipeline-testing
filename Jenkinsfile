@@ -10,7 +10,7 @@ pipeline {
             steps {
                 echo "Start of Stage Build..."
                 echo "Building......."
-                sh "wait 5"
+                sh "sleep 5"
                 echo "End of Stage Build..."
             }
         }
@@ -28,7 +28,7 @@ pipeline {
                 echo "Start of Stage Deploy..."
                 echo "Deploying......."
                 sh "ls -la"
-                sh "wait 5"
+                sh "sleep 5"
                 sh '''
                    echo "Line1"
                    echo "Line2"
